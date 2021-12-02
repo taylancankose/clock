@@ -8,7 +8,6 @@ info.innerHTML = `Merhaba, ${user}!  Hoş geldin!`
 
 function renderTime(){
 	var currentTime = new Date();
-	var diem = "AM";
 	var h = currentTime.getHours();
 	var m = currentTime.getMinutes();
 	var s = currentTime.getSeconds();
@@ -17,12 +16,7 @@ function renderTime(){
     var yyyy = currentTime.getFullYear();
 
     
-	if(h == 0){
-		h = 12;
-	}else if(h > 12){
-		h = h - 12;
-		diem = "PM"
-	}
+
 	if(h < 10){
 		h = "0" + h;
 	}
@@ -33,7 +27,7 @@ function renderTime(){
 		s = "0" + s;
 	}
 	var myClock = document.getElementById('clockDisplay');
-	myClock.textContent = h + ":" + m + ":" + s + " " + diem +" "+ mm + "/" + dd + "/" + yyyy;
+	myClock.textContent = h + ":" + m + ":" + s + " " + mm + "/" + dd + "/" + yyyy;
 	setTimeout('renderTime()', 1000); 
 }
 renderTime();
