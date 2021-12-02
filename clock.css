@@ -1,0 +1,36 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: thistle;
+}
+
+#info{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 250px;
+}
+
+
+#clockDisplay{
+ margin:auto auto;
+ color: #7c4ee6;
+ padding-top: 0px;
+ font-size:40px;
+ font-weight:bold;
+ text-align: center;
+ letter-spacing: 2px;
+}
+
+#text{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+    color:purple;
+
+}
+
+#brand{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -200px;
+    margin-top: 300px;
+}
