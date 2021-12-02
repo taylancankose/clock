@@ -1,10 +1,13 @@
 let brand = document.querySelector('#brand')
 brand.innerHTML = `KODLUYORUZ`
-
 let user = prompt("Adınız")
 let info = document.querySelector("#info")
 
-info.innerHTML = `Merhaba, ${user}!  Hoş geldin!`
+if (user !=null){
+	info.innerHTML = `Merhaba, ${user}!  Hoş geldin!`
+} else {
+	info.innerHTML = `Merhaba, gizemli kişi!  Hoş geldin!`
+}
 
 function renderTime(){
 	var currentTime = new Date();
@@ -14,8 +17,6 @@ function renderTime(){
 	var dd = currentTime.getDate();
     var mm = currentTime.getMonth() + 1; //January is 0!
     var yyyy = currentTime.getFullYear();
-
-    
 
 	if(h < 10){
 		h = "0" + h;
